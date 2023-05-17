@@ -66,7 +66,8 @@ def average_precision(relevant_items, retrieved_items):
 
 
 
-def mean_average_precision(queries, relevant_items, retrieved_items):
+def mean_average_precision(ap_scores):
+    
     """
     Calculates the mean average precision (mAP) score for a set of queries.
     
@@ -78,9 +79,6 @@ def mean_average_precision(queries, relevant_items, retrieved_items):
     Returns:
         float: Mean average precision (mAP) score for the set of queries.
     """
-    ap_scores = []
-    for query in queries:
-        ap = average_precision(relevant_items[query], retrieved_items[query])
-        ap_scores.append(ap)
+
     map_score = sum(ap_scores) / len(ap_scores)
     return map_score
