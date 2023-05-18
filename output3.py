@@ -121,7 +121,7 @@ def get_random_image(number_of_random_images, database_filenames, database_image
 
         top_k_results = [database_filenames[indices]  for indices in top_k_indices]
 
-        one_average_precision = average_precision(relevant_images, top_k_results)
+        one_average_precision = average_precision(top_k_results , relevant_images )
 
 
         all_average_precision.append(one_average_precision)
