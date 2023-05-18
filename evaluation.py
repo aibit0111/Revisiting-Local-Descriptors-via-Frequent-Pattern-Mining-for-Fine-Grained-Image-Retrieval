@@ -43,26 +43,22 @@ query1 is [item1, item5, item2] and the ranked list of retrieved items for query
 
 
 
-def average_precision(relevant_items, retrieved_items):
-    """
-    Calculates the average precision (AP) score for a single query.
-    
-    Args:
-        relevant_items (set): Set of relevant items for the query.
-        retrieved_items (list): Ranked list of retrieved items for the query.
+def average_precision(retrieved_items, relevant_items):
+    rel_count = 0
+    precisions = []
 
-    Returns:
-        float: Average precision (AP) score for the query.
-    """
-    num_relevant = 0
-    sum_precision = 0
-    for i, item in enumerate(retrieved_items):
+    for i, item in enumerate(retrieved_items, start=1):
         if item in relevant_items:
-            num_relevant += 1
-            precision = num_relevant / (i + 1)
-            sum_precision += precision
-    ap = sum_precision / len(relevant_items)
-    return ap
+            rel_count += 1
+            precision_at_i = rel_count / i
+            precisions.append(precision_at_i)
+
+    if precisions:
+        avg_precision = sum(precisions) / len(precisions)
+    else:
+        avg_precision = 0.0
+
+    return avg_precision
 
 
 
