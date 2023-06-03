@@ -13,4 +13,4 @@ local feature. Further, an aggregation feature that learns global–local aware 
 designed. Consequently, the discriminative ability among different fine-grained classes is enhanced.
 We evaluate the proposed method on five popular fine-grained datasets. Extensive experimental
 results demonstrate that the performance of fine-grained image retrieval is improved with the
-proposed global–local aware representation.
+proposed global–local aware representation. 
