@@ -39,7 +39,7 @@ query1 is [item1, item5, item2] and the ranked list of retrieved items for query
 [item4, item3], then retrieved_items would be a dictionary like this: 
 {query1: [item1, item5, item2], query2: [item4, item3]}
 
-"""
+""" 
 
 
 
