@@ -7,7 +7,7 @@ The aggregated feature F is calculated for both the query image and each image i
 A similarity score is calculated between the query image and each image in the database using the formula S(FQ, FD) = FQ^T * FD / (|FQ| * |FD|), where FQ and FD denote the aggregated feature of the query image and the aggregated feature of a database image, respectively.
 The candidate images are returned based on their similarity scores.
 
-"""
+""" 
 
 
 """
