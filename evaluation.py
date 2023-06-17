@@ -78,3 +78,28 @@ def mean_average_precision(ap_scores):
 
     map_score = sum(ap_scores) / len(ap_scores)
     return map_score
+
+
+def calculate_anmrr(retrieved_items, relevant_items, max_rank=None):
+    ranks = []
+    for item in relevant_items:
+        rank = retrieved_items.index(item) + 1  # Adding 1 because index is 0-based
+        ranks.append(rank)
+    
+    if max_rank is None:
+        max_rank = len(retrieved_items)
+    
+    mrr = sum([1.0/rank if rank <= max_rank else 1.0/max_rank for rank in ranks])/len(relevant_items)
+    max_mrr = 1.0
+    min_mrr = 1.0/max_rank
+    
+    anmrr = 1 - ((mrr - min_mrr) / (max_mrr - min_mrr))
+    
+    return anmrr
+
+retrieved_items = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+relevant_items = ['a', 'c', 'e', 'g', 'i']
+
+anmrr = calculate_anmrr(retrieved_items, relevant_items)
+print(f"The ANMRR is: {anmrr}")
+
