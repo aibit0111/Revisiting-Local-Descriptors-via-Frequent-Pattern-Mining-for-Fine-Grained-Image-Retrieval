@@ -6,7 +6,7 @@ from PIL import Image
 from skimage import measure
 
 
-
+   
 
 class GlobalFeature:
     def __init__(self, vgg16):
