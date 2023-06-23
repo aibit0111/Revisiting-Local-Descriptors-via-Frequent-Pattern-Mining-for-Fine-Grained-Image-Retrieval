@@ -88,36 +88,5 @@ plt.show()
 
 import matplotlib.pyplot as plt
 
-def anmrr(retrieved_items, relevant_items):
-    max_r = len(retrieved_items)
-    ideal_order = sorted(relevant_items, key=lambda x: retrieved_items.index(x) if x in retrieved_items else float('inf'))
-    sum_r = 0
-    for item in relevant_items:
-        r = retrieved_items.index(item) + 1 if item in retrieved_items else max_r
-        sum_r += min(r, max_r)
-    avg_r = sum_r / len(relevant_items)
-    sum_ideal_r = sum((i+1) for i, _ in enumerate(ideal_order))
-    avg_ideal_r = sum_ideal_r / len(relevant_items)
-    anmrr = (avg_r - avg_ideal_r) / max_r
-    return anmrr
-
-def plot_anmrr_curve(retrieved_items, relevant_items):
-    anmrr_values = []
-
-    for i in range(1, len(retrieved_items) + 1):
-        anmrr_values.append(anmrr(retrieved_items[:i], relevant_items))
-
-    plt.figure(figsize=(10,6))
-    plt.plot(range(1, len(retrieved_items) + 1), anmrr_values, marker='o')
-    plt.xlabel('Number of Retrieved Items')
-    plt.ylabel('ANMRR')
-    plt.title('ANMRR Curve')
-    plt.grid()
-    plt.show()
-
-retrieved_items = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
-relevant_items = ['a', 'c', 'e', 'g', 'i']
-
-plot_anmrr_curve(retrieved_items, relevant_items)
 
 
