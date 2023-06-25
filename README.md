@@ -14,3 +14,4 @@ designed. Consequently, the discriminative ability among different fine-grained 
 We evaluate the proposed method on five popular fine-grained datasets. Extensive experimental
 results demonstrate that the performance of fine-grained image retrieval is improved with the
 proposed global–local aware representation. 
+ 
