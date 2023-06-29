@@ -16,7 +16,7 @@ def average_precision(retrieved_items, relevant_items):
 
 
     return avg_precision 
-
+ 
  
 def average_recall(retrieved_items, relevant_items):
     rel_count = 0
