@@ -107,7 +107,7 @@ def get_random_image(number_of_random_images, database_filenames, database_image
             file_name = i
             image = j
             global_feature = global_extractor.extract(image)
-            local_feature = global_extractor.extract(image)
+            local_feature = local_extractor.extract(image)
             database_feature =  global_feature + alpha * local_feature
             get_similarity = similarity_score(database_feature, query_features)
             all_similarity_score.append(get_similarity)
