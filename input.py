@@ -7,7 +7,7 @@ The best value of alpha is chosen based on
 the performance of the method on these datasets.
 
 """
-
+          
 
 def aggregate_features(global_feature, local_feature, alpha):
     """
