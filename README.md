@@ -15,7 +15,7 @@ We evaluate the proposed method on five popular fine-grained datasets. Extensive
 results demonstrate that the performance of fine-grained image retrieval is improved with the
 proposed global–local aware representation. 
 
-
+                
    
 To Do:
 1. Clear the bug
