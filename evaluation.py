@@ -16,7 +16,7 @@ proposed method on five fine-grained datasets. For each dataset, a ranked
 list of retrieved images was generated for each query image using the proposed 
 method. The mAP score was then calculated based on these ranked lists to 
 measure the quality of the retrieval results.
-
+        
 """
 
 
