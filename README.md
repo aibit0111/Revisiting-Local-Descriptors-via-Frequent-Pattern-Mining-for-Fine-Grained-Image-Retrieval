@@ -16,7 +16,7 @@ results demonstrate that the performance of fine-grained image retrieval is impr
 proposed global–local aware representation. 
 
                 
-   
+          
 To Do:
 1. Clear the bug
 2. Check the ANMRR plot
