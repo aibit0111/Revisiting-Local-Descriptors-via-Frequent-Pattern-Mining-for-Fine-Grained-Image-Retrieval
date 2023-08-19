@@ -1,6 +1,6 @@
 # Revisiting-Local-Descriptors-via-Frequent-Pattern-Mining-for-Fine-Grained-Image-Retrieval
 Implementation of this paper "Revisiting Local Descriptors via Frequent Pattern Mining for Fine-Grained Image Retrieval" 
-
+           
 
 Abstract: Fine-grained image retrieval aims at searching relevant images among fine-grained classes
 given a query. The main difficulty of this task derives from the small interclass distinction and the
