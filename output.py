@@ -24,7 +24,7 @@ transform = transforms.Compose([
 
 # Load query images
 query_images = []
-
+                 
 for filename in os.listdir(query_image_folder):
     image = Image.open(os.path.join(query_image_folder, filename))
     image = transform(image).unsqueeze(0)
