@@ -36,7 +36,7 @@ def average_recall(retrieved_items, relevant_items):
     return avg_recall
 
  import matplotlib.pyplot as plt
-
+                         
 
 
 avg_precisions = []
