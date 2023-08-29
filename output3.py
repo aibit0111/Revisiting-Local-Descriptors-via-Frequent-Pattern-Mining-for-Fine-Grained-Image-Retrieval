@@ -9,7 +9,7 @@ import glob
 from similarity import similarity_score
 from evaluation import average_precision, mean_average_precision
 import random
-
+                 
 # Define paths to query and database image folders
 database_image_folder = r"C:\Users\mohit\OneDrive\Desktop\remove_background\entropy\code\database_image"
 
