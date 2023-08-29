@@ -29,7 +29,7 @@ k = 5 # top K result
 no_random_images = 3
 
 
-
+                      
 def load_and_transform_images(database_image_folder, transform):
     # Define image extensions
     image_extensions = ['jpg', 'png', 'jpeg']
