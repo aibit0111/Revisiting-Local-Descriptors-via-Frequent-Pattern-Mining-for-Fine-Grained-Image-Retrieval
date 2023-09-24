@@ -20,6 +20,6 @@ proposed global–local aware representation.
 To Do:        
 1. Clear the bug
 2. Check the ANMRR plot
-3. 
+3. Optimize the code
                  
             
