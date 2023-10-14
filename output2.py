@@ -12,7 +12,7 @@ from evaluation import average_precision
 # Define paths to query and database image folders
 query_image_path = r"C:\Users\mohit\OneDrive\Desktop\remove_background\entropy\code\query_image\Black_Footed_Albatross_0002_55.jpg"
 relevant_image_folder =  r"C:\Users\mohit\OneDrive\Desktop\remove_background\entropy\code\database_image\001.Black_footed_Albatross"
-database_image_folder = r"C:\Users\mohit\OneDrive\Desktop\remove_background\entropy\code\database_image"
+database_image_folder = r"C:\Users\mohit\OneDrive\Desktop\remove_background\entropy\code\database_image"                   
 
 vgg16_model = vgg16(pretrained=True)
 
